@@ -21,7 +21,7 @@ def fetchJSFeatures(url):
     outputList = []
     for function in functionList:
         outputList.append(function(response))
-    print(outputList)
+    return outputList
 
 # Website Forwarding
 

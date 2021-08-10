@@ -21,7 +21,7 @@ def fetchURLFeatures(url):
     outputList = []
     for function in functionList:
         outputList.append(function(url))
-    print(outputList)
+    return outputList
 
 # IP Address in URL
 

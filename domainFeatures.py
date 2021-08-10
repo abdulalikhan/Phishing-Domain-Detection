@@ -24,7 +24,7 @@ def fetchDomainFeatures(url):
     outputList.append(dnsRecordExists)
     outputList.append(domainAge(domainName))
     outputList.append(alexaRank(url))
-    print(outputList)
+    return outputList
 
 # Age of domain
 

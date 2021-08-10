@@ -4,6 +4,9 @@ import domainFeatures
 
 url = "https://www.google.com"
 
-urlFeatures.fetchURLFeatures(url)
-jsFeatures.fetchJSFeatures(url)
-domainFeatures.fetchDomainFeatures(url)
+features = []
+features.extend(urlFeatures.fetchURLFeatures(url))
+features.extend(jsFeatures.fetchJSFeatures(url))
+features.extend(domainFeatures.fetchDomainFeatures(url))
+
+print(features)
