@@ -27,8 +27,9 @@ def fetchURLFeatures(url):
 
 
 def isIPinURL(url):
+    domain = urlparse(url).netloc
     try:
-        ip.ip_address(url)
+        ip.ip_address(domain)
         ipFlag = -1
     except:
         ipFlag = 1
