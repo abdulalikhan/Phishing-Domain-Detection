@@ -17,13 +17,16 @@ def fetchDomainFeatures(url):
     domainName = ""
     # Existence of DNS record !
     dnsRecordExists = 1
+    ageOfDomain = -1
     try:
         domainName = whois.whois(urlparse(url).netloc)
+        ageOfDomain = domainAge(domainName)
     except:
         dnsRecordExists = -1
     outputList.append(dnsRecordExists)
-    outputList.append(domainAge(domainName))
+    outputList.append(ageOfDomain)
     outputList.append(alexaRank(url))
+
     return outputList
 
 # Age of domain
