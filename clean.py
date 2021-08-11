@@ -7,7 +7,8 @@ def cleanDataframe(df):
         for cell in df[col]:
             temp.append(int(cell))
         df[col] = temp
-
+    
+    # Drop columns for unused features
     df.drop("SSLfinal_State", inplace=True, axis=1)
     df.drop("Favicon", inplace=True, axis=1)
     df.drop("port", inplace=True, axis=1)
