@@ -3,11 +3,13 @@ Domain based features
 1. Existence of DNS Record
 2. Age of Domain
 3. Alexa Rank
+4. Google Index
 '''
 
 import whois  # python-whois
+import requests
 from datetime import datetime as dt
-from urllib.parse import urlparse, quote
+from urllib.parse import urlparse, quote, urlencode
 import urllib.parse
 from bs4 import BeautifulSoup
 
@@ -23,9 +25,10 @@ def fetchDomainFeatures(url):
         ageOfDomain = domainAge(domainName)
     except:
         dnsRecordExists = -1
-    outputList.append(dnsRecordExists)
     outputList.append(ageOfDomain)
+    outputList.append(dnsRecordExists)
     outputList.append(alexaRank(url))
+    outputList.append(checkGoogleIndex(url))
 
     return outputList
 
@@ -71,3 +74,23 @@ def alexaRank(url):
         return 1
     else:
         return 0
+
+# Google Index
+
+
+def checkGoogleIndex(url):
+    user_agent = 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'
+    headers = {'User-Agent': user_agent}
+
+    query = {'q': 'info:' + url}
+    google = "https://www.google.com/search?" + urlencode(query)
+    data = requests.get(google, headers=headers)
+    data.encoding = 'ISO-8859-1'
+    soup = BeautifulSoup(str(data.content), "html.parser")
+    try:
+        check = soup.find(id="rso").find(
+            "div").find("div").find("h3").find("a")
+        href = check['href']
+        return 1
+    except AttributeError:
+        return -1
