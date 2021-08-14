@@ -1,0 +1,15 @@
+flask
+gunicorn
+pickle
+scipy.io
+sklearn.metrics
+sklearn.model_selection
+sklearn.tree
+sklearn.linear_model
+sklearn.ensemble
+numpy
+pandas
+python-whois
+urllib.parse
+bs4
+ipaddress
