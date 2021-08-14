@@ -5,6 +5,7 @@ scikit-learn
 numpy
 pandas
 python-whois
-urllib.parse
+urllib3
+requests
 bs4
 ipaddress
