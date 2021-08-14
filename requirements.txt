@@ -1,11 +1,7 @@
 flask
 gunicorn
 scipy
-sklearn.metrics
-sklearn.model_selection
-sklearn.tree
-sklearn.linear_model
-sklearn.ensemble
+scikit-learn
 numpy
 pandas
 python-whois
