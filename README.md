@@ -20,7 +20,7 @@ The table below shows the accuracy of the trained models for five different test
 
 
 | Algorithm                 | 50-50 Split  | 60-40 Split  | 70-30 Split  | 80-20 Split  | 90-10 Split  |
-| ------------------------- | ------------------------------------------------------------------------:|
+| ------------------------- | ------------ | ------------ | ------------ | ------------ | ------------:|
 | Logistic Regression       | 78.09%       | 78.02%       | 78.35%       | 78.43%       | 80.83%       |
 | Random Forest             | 85.11%       | 84.58%       | 85.71%       | 85.48%       | 88.52%       |
 | Perceptron                | 68.90%       | 74.36%       | 72.41%       | 68.11%       | 73.33%       |
@@ -34,7 +34,7 @@ To determine the accuracy of the models, I calculated the Mean Absolute Percenta
 
 | Algorithm                 | 50-50 Split                     |
 | ------------------------- | -------------------------------:|
-| Logistic Regression       | 8.71%                           |
-| Random Forest             | 4.94%                           |
-| Perceptron                | 14.99%                          |
-| C.A.R.T.                  | 10.70%                          |
+| Logistic Regression       | 78.09%                          |
+| Random Forest             | 85.11%                          |
+| Perceptron                | 68.90%                          |
+| C.A.R.T.                  | 84.53%                          |
