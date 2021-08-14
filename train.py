@@ -20,7 +20,7 @@ df = clean.cleanDataframe(df)
 y = df['Result']
 X = df.drop('Result', axis=1)
 X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.10, random_state=42)
+    X, y, test_size=0.30, random_state=42)
 
 # Classification and Regression Tree (CART)
 classifier = DecisionTreeClassifier()
