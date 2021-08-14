@@ -6,12 +6,12 @@ This web application determines if a webpage is a phishing page or not using the
 The web application is hosted at []()
 
 ## Screenshots
-![Landing Page](https://github.com/abdulalikhan/PSX-Stock-Prediction-Using-LSTM/blob/main/1.png?raw=true)
-![Detected a Phishing Page](https://github.com/abdulalikhan/PSX-Stock-Prediction-Using-LSTM/blob/main/2.png?raw=true)
-![Detected a Safe Page](https://github.com/abdulalikhan/PSX-Stock-Prediction-Using-LSTM/blob/main/3.png?raw=true)
+![Landing Page](https://github.com/abdulalikhan/Phishing-Domain-Detection/blob/main/1.png?raw=true)
+![Detected a Phishing Page](https://github.com/abdulalikhan/Phishing-Domain-Detection/blob/main/2.png?raw=true)
+![Detected a Safe Page](https://github.com/abdulalikhan/Phishing-Domain-Detection/blob/main/3.png?raw=true)
 
 ## Tech Stack
-![Tech Stack](https://github.com/abdulalikhan/PSX-Stock-Prediction-Using-LSTM/blob/main/stack.png?raw=true)
+![Tech Stack](https://github.com/abdulalikhan/Phishing-Domain-Detection/blob/main/stack.png?raw=true)
 
 ## Model Performance
 
