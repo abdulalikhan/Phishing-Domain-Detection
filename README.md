@@ -18,7 +18,7 @@ The web application is hosted at []()
 - Four different machine learning algorithms were used to train our model (Random Forest, Perceptron, Linear Regression, and CART).
 - The table below shows the accuracy of the trained models for five different testing-training data splits.
 
-| Algorithm                 |              Percentage Accuracy for different train/test splits         |
+| Algorithm                 |  |  | Percentage Accuracy for different train/test splits | |            |
 |                           | 50-50 Split  | 60-40 Split  | 70-30 Split  | 80-20 Split  | 90-10 Split  |
 | ------------------------- | ------------ | ------------ | ------------ | ------------ | ------------:|
 | Logistic Regression       | 78.09%       | 78.02%       | 78.35%       | 78.43%       | 80.83%       |
