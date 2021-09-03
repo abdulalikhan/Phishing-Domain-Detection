@@ -57,6 +57,7 @@ def domainAge(domainName):
         age = -1
     else:
         age = 1
+
     return age
 
 # Website's Alexa Rank
@@ -87,6 +88,7 @@ def checkGoogleIndex(url):
     data = requests.get(google, headers=headers)
     data.encoding = 'ISO-8859-1'
     soup = BeautifulSoup(str(data.content), "html.parser")
+
     try:
         check = soup.find(id="rso").find(
             "div").find("div").find("h3").find("a")

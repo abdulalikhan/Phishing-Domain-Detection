@@ -17,8 +17,6 @@ def home():
         features.extend(jsFeatures.fetchJSFeatures(url))
         features.extend(domainFeatures.fetchDomainFeatures(url))
 
-        # print(features)
-
         features = np.array(features)
         features = features.reshape(1, -1)
 
@@ -30,6 +28,7 @@ def home():
             msg = "warning"
         else:
             msg = "safe"
+
         return render_template('index.html', msg=msg)
 
     else:
