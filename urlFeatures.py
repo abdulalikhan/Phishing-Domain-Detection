@@ -22,6 +22,7 @@ def fetchURLFeatures(url):
     functionList = [isIPinURL, classifyURLLength, usesShorteningService,
                     containsAtSymbol, redirectSymbol, containsDashSymbol,
                     domainLevel, domainRegistrationLen, containsHTTPS]
+
     outputList = []
     for function in functionList:
         outputList.append(function(url))
