@@ -20,7 +20,7 @@ def home():
         features = np.array(features)
         features = features.reshape(1, -1)
 
-        filename = 'model.sav'
+        filename = 'models/model.sav'
         loaded_model = pickle.load(open(filename, 'rb'))
         result = loaded_model.predict(features)
 
